@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALANCEADO ANIMALES DE CAMPO</title>
+    <link rel="stylesheet" href="animales-de-campo.css">
+    <link rel="stylesheet" href="https://fontello.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scrollreveal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER Productos (Perro, gato, etc.) Accesorios, Contacto -->
+
+
+    <!-- AVISO HEADER -->
+    <header>
+        <div class="aviso">
+            <span class="text-aviso">CONSULTE STOCK Y PRECIO ANTES DE COMPRAR</span>
+        </div>
+
+ <!-- NAVBAR-RESPONSIVE -->
+<nav class="nav-responsive">
+        <label for="btn" class="button">
+         <span class="fa fa-bars"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul class="menu">
+            
+            <li>
+               <label for="btn-2" class="first">BALANCEADO
+               <span class="fas fa-caret-down"></span>
+               </label>
+               <input type="checkbox" id="btn-2">
+               <ul>
+                  <li><a href="perros.html">Perros</a></li>
+                  <li><a href="gatos.html">Gatos</a></li>
+                  <li> 
+                    <label for="btn-3" class="first">Animales de Campo
+                    <span class="fas fa-caret-down"></span>
+                    </label>
+                     <input type="checkbox" id="btn-3">
+                        <ul>
+                            <li><a href="bovinos.html">Bovinos</a></li>
+                            <li><a href="cerdos.html">Porcinos</a></li>
+                            <li><a href="equinos.html">Equinos</a></li>
+                            <li><a href="conejos.html">Conejos</a></li>
+                            <li><a href="ovinos.html">Ovinos</a></li>
+                            <li><a href="aves.html">Aves</a></li>
+                        </ul>
+                    </li>
+               </ul>
+            </li>
+            <li>
+               <label for="btn-4" class="second">CONCENTRADO
+               <span class="fas fa-caret-down"></span>
+               </label>
+               <input type="checkbox" id="btn-4">
+               <ul>
+                  <li><a href="aves.html">Aves</a></li>
+                  <li><a href="cerdos.html">Porcinos</a></li>
+               </ul>
+            </li>
+            <li><a href="semillas-y-forrajes.html">SEMILLAS Y FORRAJES</a></li>
+            <li><a href="accesorios.html">ACCESORIOS</a></li>
+            <li><a href="#">CONTACTO</a></li>
+         </ul>
+      </nav>
+       <!-- This code used to rotate drop icon(-180deg).. -->
+       <script>
+         $('nav .button').click(function(){
+           $('nav .button span').toggleClass("rotate");
+         });
+           $('nav ul li .first').click(function(){
+             $('nav ul li .first span').toggleClass("rotate");
+           });
+           $('nav ul li .second').click(function(){
+             $('nav ul li .second span').toggleClass("rotate");
+           });
+      </script> 
+
+        <!-- NAVBAR -->
+    <nav class="navbar">
+           <a href="/index.html">
+            <img src="ecobalancelogo.png" alt="logo" width="160px" height="70px">
+        </a>
+            <div class="navbar-links">
+                <ul>
+
+                    <!-- BOTON NAV -->
+                    <label for="btn" class="icon">
+                        <span class="fa fa-bars"></span>
+                    </label>
+                    <input type="checkbox" id="btn">
+
+                       <li>
+                        <label for="btn-1" class="show"></label>
+                        <input type="checkbox" id="btn-1">
+                        <a class="links-nav" href="#balanceado">BALANCEADO</a>
+                        <ul>
+                            <li><a href="perros.html">PERROS</a></li>
+                            <li><a href="gatos.html">GATOS</a></li>
+                            <li> 
+                                <label for="btn-2" class="show"></label>
+                                <input type="checkbox" id="btn-2">
+                                <a class="text-animalesdecampo" href="animales-de-campo.html">ANIMALES DE CAMPO +</a>
+                                <ul class="ul-active">
+                                    <li><a href="bovinos.html">BOVINOS</a></li>
+                                    <li><a href="cerdos.html">PORCINOS</a></li>
+                                    <li><a href="equinos.html">EQUINOS</a></li>
+                                    <li><a href="conejos.html">CONEJOS</a></li>
+                                    <li><a href="ovinos.html">OVINOS</a></li>
+                                    <li><a href="aves.html">AVES</a></li>
+                                </ul>    
+                            </li>
+                        </ul>
+                       </li> 
+
+                        <li>
+                        <a class="links-nav" href="#concentrado">CONCENTRADO
+                            <ul>
+                                <li><a href="aves.html">AVES</a></li>
+                                <li><a href="cerdos.html">PORCINOS</a></li>
+                            </ul>
+                        </a>
+                        </li>
+
+                        <li><a class="links-nav" href="semillas-y-forrajes.html">SEMILLAS Y FORRAJES</a>
+                        </li>
+
+                        <li><a class="links-nav accesorios" href="accesorios.html">ACCESORIOS</a>
+                        </li>
+                </ul>
+            </div>
+    </nav>
+   </header>   
+
+   <!-- BOTON WHATSAPP -->
+<a href="https://api.whatsapp.com/send?phone=5493535646362" class="btn-wsp" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+</a>
+
+<!-- BOTON BACK -->
+<div class="btn-back-container">
+    <a href="index.html" class="btn-back"> 
+        <img src="esquema-de-boton-circular-de-flecha-hacia-atras-izquierda.png" height="40px" width="40px" alt="volver">
+    </a>
+</div>
+
+
+
+<!-- H2: Perros Gatos (fotos) -->
+<br> <br> <br> <br> <br> <br>
+
+
+    <div class="title-balanceado caja-titles" >
+      <h1 class="text-balanceado titulos">ANIMALES DE CAMPO</h1>
+      <h1 class="text-balanceado-responsive">CAMPO</h1>
+    </div> 
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="flex-container-balanceado" >
+        <div class="caja caja1">
+            <a href="bovinos.html">
+                <img src="images/vacas-editada.jpg" alt="vacas">
+            </a>
+        </div>
+
+        <div class="caja caja2">
+            <a href="cerdos.html">
+                <img src="images/porcinos-editada.jpg" alt="cerdo">
+            </a>
+        </div>
+
+        <div class="caja caja3">
+            <a href="/sections/equinos.html">
+                <img src="images/caballos-editada.jpg" alt="caballo">
+            </a>
+        </div>
+
+        <div class="caja caja4">
+            <a href="conejos.html">
+                <img src="images/conejos-editada.jpg" alt="conejo">
+            </a>
+        </div>
+
+        <div class="caja caja5">
+            <a href="ovinos.html">
+                <img src="images/ovinos-editada.jpg" alt="oveja">
+            </a>
+        </div>
+
+        <div class="caja caja6">
+            <a href="aves.html">
+                <img src="images/aves-editada.jpg" alt="aves">
+            </a>
+        </div>
+    </div> 
+
+       <!-- FOOTER -->
+<div class="footer-container">
+        <footer class="footer">
+            <span class="text-contacto">CONTACTO</span>
+            <div class="social-icon-container">
+                <a href="https://www.facebook.com/eco.balance.391?mibextid=LQQJ4d" target="_blank" class="social-icon">
+                    <img src="facebook.png" alt="facebook">
+                </a>
+                <a href="https://instagram.com/ecobalance.sas?igshid=YmMyMTA2M2Y=" target="_blank" class="social-icon">
+                    <img src="instagram.png" alt="instagram">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5493535646362" target="_blank" class="social-icon">
+                    <img src="whatsapp.png" alt="whatsapp">
+                </a>
+                <a href="https://goo.gl/maps/RkKPE6Xx8pbdnFZm6" target="_blank" class="social-icon">
+                    <img src="economia-local.png" alt="local">
+                </a>
+            </div>
+            <span class="copyright"> &copy;2022, EcoBalance S.A.S. Todos los derechos reservados.</span>
+        </footer>
+</div>
+
+</body>
+</html>
