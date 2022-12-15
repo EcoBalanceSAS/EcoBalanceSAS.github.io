@@ -127,6 +127,15 @@
                 </ul>
             </div>
     </nav>
+    <!-- BOTON DARKMODE -->
+<div class="container-darkmode">
+    <label class="switch">
+    <input id="bdark" type="checkbox">
+    <span class="slider"></span>
+</label>
+
+
+</div>
    </header>   
     <!-- H1 PAGINA PRINCIPAL: EcoBalance -->
     <div class="container-mainpage">
@@ -151,7 +160,11 @@
               </a>
             </section>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f0f0f0" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,181.3C480,213,600,267,720,261.3C840,256,960,192,1080,154.7C1200,117,1320,107,1380,101.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <svg class="svg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f0f0f0" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,181.3C480,213,600,267,720,261.3C840,256,960,192,1080,154.7C1200,117,1320,107,1380,101.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+
+        <svg class="svg-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#333333" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,181.3C480,213,600,267,720,261.3C840,256,960,192,1080,154.7C1200,117,1320,107,1380,101.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+</svg>
     
     <!-- BOTON DE BUSQUEDA -->
     <div class="group">
@@ -164,6 +177,7 @@
 <a href="https://api.whatsapp.com/send?phone=5493535646362" class="btn-wsp" target="_blank">
     <i class="fa fa-whatsapp"></i>
 </a>
+
 
 
         
@@ -255,10 +269,9 @@
         </div>
 
         <div class="caja caja2">
-		
-                    <a href="cerdos.html">
-                        <img src="porcinos-editada.jpg" alt="porcinos">
-                    </a>
+             <a href="cerdos.html">
+                <img src="porcinos-editada.jpg" alt="porcinos">
+             </a>
         </div>
 
         <div class="caja caja7">
@@ -275,17 +288,6 @@
                 </li>
             </ul>
         </div>
-
-        <!-- <div class="caja caja5">
-            <a href="sections/equinos.html">
-                <img src="images/caballos-editada.jpg" alt="caballos">
-            </a>
-        </div>
-        <div class="caja caja6">
-            <a href="sections/conejos.html">
-                <img src="images/conejos-editada.jpg" alt="conejos">
-            </a>
-        </div> -->
 
     </div> 
 
@@ -401,5 +403,30 @@
            });
       </script> 
     <script src="index.js"></script>
+    <script>
+        const bdark = document.querySelector('#bdark');
+        const body = document.querySelector('body');
+
+        load();
+
+        bdark.addEventListener('click', e =>{
+            body.classList.toggle('darkmode');
+            store(body.classList.contains('darkmode'));
+        });
+
+        function load(){
+            const darkmode = localStorage.getItem('darkmode');
+
+            if(!darkmode){
+                store('false');
+            }else if(darkmode == 'true'){
+                body.classList.add('darkmode')
+            }
+        }
+
+        function store(value){
+            localStorage.setItem('darkmode', value)
+        }
+    </script>
 </body>
 </html>

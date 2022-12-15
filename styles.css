@@ -4,10 +4,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body{	
-	background-color: #f0f0f0 !important;
+body{
+	background-color: #f0f0f0 ;
 	font-family: 'Montserrat', sans-serif;
-	}
+}
 
 html{
 	scroll-behavior: smooth;
@@ -47,7 +47,7 @@ html{
 	position:fixed;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgba(255, 255, 255, 0.97) !important;
+	background-color: rgba(255, 255, 255, 0.97) ;
 	z-index: 10000;
 	transition:none ;
 	margin-top: 20px;
@@ -313,6 +313,83 @@ svg{
 	margin-top: -1000px;
 	margin-bottom: -5px;
 }
+
+.svg-dark{
+	display: none;
+}
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: rgb(219, 198, 2);
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+.slider::after {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  top: 10%;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  transition: ease 0.4s;
+}
+
+input:checked + .slider::after {
+  left: 80%;
+  width: 0px;
+  height: 0px;
+}
+
+
+
 
 /* PAGINA SECUNDARIA*/
 
@@ -748,7 +825,7 @@ hr{
 
 .nav-responsive ul{
   position: absolute;
-	background: #1b1b1bfa;
+	background: #f0f0f0;
 	list-style: none;
 	top: 75px;
 	left: -178px;
@@ -756,6 +833,9 @@ hr{
 	border-radius: 5px;
 	display: none;
 }
+
+.nav-responsive label {color: #090909;}
+
 
 [id^=btn]:checked + ul{
   display: block;
@@ -786,7 +866,7 @@ hr{
 }
 
 .nav-responsive ul li a{
-  color: white;
+  color: #090909;
   text-decoration: none;
   font-size: 14px;
   display: block;
@@ -805,7 +885,7 @@ hr{
   border-bottom: none;
 }
 .nav-responsive ul ul li a{
-  color: #e6e6e6;
+  color: #090909;
   font-size: 14px;
 }
 .nav-responsive ul li span{
@@ -920,6 +1000,23 @@ input{
 	.logo-mainpage img{
 		height: 500px;
 	}
+
+	.darkmode .slider {
+  background-color: #4e82ad !important;
+}
+
+
+	body.darkmode {
+		color: #4e82ad;
+	}
+
+.darkmode .slider::after {
+  background-color: #4e82ad !important;
+}
+
+input:checked + .slider {
+  background-color: #4e82ad;
+}
 }
 
 @media (max-width:476px){
@@ -974,4 +1071,123 @@ input{
 	.logo-mainpage img {
   margin-bottom: 56px;
 }
+}
+
+
+/* DARKMODE */
+body.darkmode{
+	background-color: #333;
+	color: white;
+}
+
+.darkmode .aviso{
+	background-color: #000;
+}
+
+.darkmode .navbar{
+	background-color: #242424
+}
+
+.darkmode .navbar-links a{
+	color: #fff;
+}
+
+.darkmode .txt_view{
+	background-color: #333;
+}
+
+.darkmode paragraph_txt a{
+	color: #28d728;
+}
+
+.darkmode .actionTxtType9 .paragraph_txt.right_txt{
+	color: #fff;
+}
+
+.darkmode .actionTxtType9 .paragraph_txt{
+	background-color: #333;
+}
+
+.darkmode .titulos{
+	color: white;
+}
+
+.darkmode .flex-container-balanceado{
+	background-color: #333;
+}
+
+.darkmode .otros{
+	background-color: #333;
+}
+
+.darkmode .footer{
+	background-color: #202020;
+}
+
+.darkmode .actionTxtType9 .paragraph_txt.left_txt{
+	color: #fff;
+}
+
+.darkmode .links-nav::after {
+	background-color: #fff;
+}
+
+.darkmode .txt_view{
+	background-color: #333;
+}
+
+.darkmode .paragraph_txt a {color: #39cc39;}
+
+.darkmode .paragraph_txt i {
+  color: #39cc39;
+}
+
+.darkmode .svg-dark{
+	display: inline-block;
+}
+.darkmode .svg-white{
+	display: none;
+}
+
+.container-darkmode {
+  position: absolute;
+  display: flex;
+  height: auto;
+  top: 117px;
+  right: 30px;
+  justify-content: end;
+}
+
+.darkmode .navbar-links li ul {background-color: rgb(53, 53, 53);}
+
+.darkmode .navbar-links li ul a:hover {color: #c9c9c9;}
+
+.darkmode .nav-responsive {background: #242424;}
+
+.darkmode .button span {
+  color: white;
+}
+
+.darkmode .nav-responsive ul {
+  background: #1b1b1bfa;
+}
+
+.darkmode .nav-responsive ul li a {
+  color: white;
+}
+.darkmode .nav-responsive ul li a:hover {
+  color: #2a5bd7;
+}
+
+.darkmode .nav-responsive label {
+  color: white;
+}
+.darkmode .nav-responsive label:hover {
+  color: #2a5bd7;
+}
+
+.darkmode .slider::after {background-color: rgb(255, 255, 255);}
+
+.darkmode .slider {
+  background-color: rgb(255, 255, 255);
 }
