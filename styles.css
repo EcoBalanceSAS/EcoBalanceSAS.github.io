@@ -47,7 +47,7 @@ html{
 	position:fixed;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgb(255, 255, 255) !important;
+	background-color: rgba(255, 255, 255, 0.97) !important;
 	z-index: 10000;
 	transition:none ;
 	margin-top: 20px;
@@ -91,7 +91,7 @@ html{
 
 
 .navbar-links a{
-	color: #56575b;
+	color: #000000;
 	/**!BAJARMRPARARESPONSIVE*/
 	margin-right: 100px;
 	display: block;
@@ -180,7 +180,12 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-	margin-top: 90px;
+	margin-top: 92px;
+}
+
+.logo-mainpage img{
+	background-size: cover;
+	object-fit: cover;
 }
 
 /* REDES SOCIALES */
@@ -500,15 +505,6 @@ hr{
 	width: 350px;
 }
 
-.otros{
-  background-color: #f0f0f0;
-  width: 87%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 @keyframes cambio {
 	0% { margin-left: 0;}
 	20% { margin-left: 0;}
@@ -522,6 +518,119 @@ hr{
 	75%{ margin-left: 0;}
 	100%{ margin-left: 0;}
 }
+.otros{
+  background-color: #f0f0f0;
+  width: 87%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.caja7{
+	overflow: hidden;
+}
+
+.caja7 ul{
+	padding: 0;
+	display: flex;
+	animation: cambio2 20s infinite;
+	-webkit-animation: cambio2 20s infinite;
+}
+.caja7 li{
+	width: 100%;
+	list-style: none;
+}
+.caja7 img{
+	width: 350px;
+}
+
+@keyframes cambio2 {
+	0% { margin-left: 0;}
+	30% { margin-left: 0;}
+
+	35%{ margin-left: -100%;}
+	65%{ margin-left: -100%;}
+
+	70%{ margin-left: 0}
+	100%{ margin-left: 0;}
+}
+
+.caja6{
+	overflow: hidden;
+}
+
+.caja6 ul{
+	padding: 0;
+	display: flex;
+	animation: cambio3 20s infinite;
+	-webkit-animation: cambio3 20s infinite;
+}
+.caja6 li{
+	width: 100%;
+	list-style: none;
+}
+.caja6 img{
+	width: 350px;
+}
+
+@keyframes cambio3 {
+	0% { margin-left: 0;}
+	12% { margin-left: 0;}
+
+	15%{ margin-left: -100%;}
+	27%{ margin-left: -100%;}
+
+	30%{ margin-left: -200%}
+	42%{ margin-left: -200%;}
+
+	47%{ margin-left: -300%;}
+	59%{ margin-left: -300%;}
+
+	60%{ margin-left: -400%;}
+	77%{ margin-left: -400%;}
+
+	83%{ margin-left: 0;}
+	100%{ margin-left: 0;}
+}
+
+.caja5{
+	overflow: hidden;
+}
+
+.caja5 ul{
+	padding: 0;
+	display: flex;
+	animation: cambio4 20s infinite;
+	-webkit-animation: cambio4 20s infinite;
+}
+.caja5 li{
+	width: 100%;
+	list-style: none;
+}
+.caja5 img{
+	width: 350px;
+}
+
+@keyframes cambio4 {
+	0% { margin-left: 0;}
+	15% { margin-left: 0;}
+
+	20%{ margin-left: -100%;}
+	35%{ margin-left: -100%;}
+
+	40%{ margin-left: -200%}
+	55%{ margin-left: -200%;}
+
+	60%{ margin-left: -300%;}
+	75%{ margin-left: -300%;}
+
+	80%{ margin-left: 0;}
+	100%{ margin-left: 0;}
+
+}
+
+
 
 
 /* FOOTER */
@@ -611,6 +720,7 @@ hr{
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 }
+
 }
 
 
@@ -725,6 +835,9 @@ input{
 .actionTxtType9 .paragraph_txt em {
 	font-size: 30px;
 }
+.logo-mainpage img {
+  margin-bottom: 56px;
+}
 }
 
 @media (max-width:1126px){
@@ -745,6 +858,10 @@ input{
 	.campo {
   width: 90%;
 }
+
+.logo-mainpage img{
+		height: 500px;
+	}
 }
 
 @media (max-width:768px){
@@ -758,6 +875,20 @@ input{
 /* .nav-responsive{
 	top: 6%;
 } */
+.logo-mainpage img{
+		height: 500px;
+	}
+	.redes{
+		display: flex;
+	}
+	  
+	.logo-mainpage img {
+  	width: auto;
+  	padding-left: 60px;
+	}
+	.logo-mainpage img {
+  margin-bottom: 56px;
+}
 }
 
 @media (max-width:690px){
@@ -769,6 +900,7 @@ input{
 	padding-right: 34px;
 	padding-left: 14px;
 }
+
 }
 
 @media (max-width:584px){
@@ -785,11 +917,15 @@ input{
 	.text-balanceado{
 		display: none;
 	}
+	.logo-mainpage img{
+		height: 500px;
+	}
 }
 
 @media (max-width:476px){
 	.logo-mainpage img{
-		width: 500px;
+		width: auto;
+  		padding-left: 60px;
 		height: 500px;
 	}
 	.actionTxtType9 .paragraph_txt {height: 245px;}
@@ -832,4 +968,10 @@ input{
 	top: 7%;
 } */
 
+}
+
+@media (min-width:1300px){
+	.logo-mainpage img {
+  margin-bottom: 56px;
+}
 }

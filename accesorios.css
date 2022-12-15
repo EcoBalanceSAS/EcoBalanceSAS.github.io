@@ -47,7 +47,7 @@ html{
 	position:fixed;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgb(255, 255, 255) !important;
+	background-color: rgba(255, 255, 255, 0.97) !important;
 	z-index: 10000;
 	transition:none ;
 	margin-top: 20px;
@@ -91,7 +91,7 @@ html{
 
 
 .navbar-links a{
-	color: #56575b;
+	color: #000000;
 	/**!BAJARMRPARARESPONSIVE*/
 	margin-right: 100px;
 	display: block;
@@ -111,7 +111,6 @@ html{
 .nav-responsive{
 	display: none;
 }
-
 
 
 
