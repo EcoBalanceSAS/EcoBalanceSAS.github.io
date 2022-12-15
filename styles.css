@@ -1007,7 +1007,7 @@ input{
 
 
 	body.darkmode {
-		color: #4e82ad;
+		color: #4e82ad !important;
 	}
 
 .darkmode .slider::after {
