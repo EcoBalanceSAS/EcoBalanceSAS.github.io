@@ -341,7 +341,7 @@ svg{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: rgb(232, 232, 232);
   transition: .4s;
   border-radius: 30px;
 }
@@ -359,11 +359,11 @@ svg{
 }
 
 input:checked + .slider {
-  background-color: #fff;
+  background-color: rgb(232, 232, 232);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #fff;
+  box-shadow: 0 0 1px rgb(232, 232, 232);
 }
 
 input:checked + .slider:before {
@@ -523,7 +523,7 @@ input:checked + .slider::after {
 
 
 hr{
-	color: rgba(190, 189, 189, 0.363);
+	color: rgba(204, 204, 204, 0.548);
 }
 
 .flex-container-balanceado > *{
@@ -611,8 +611,8 @@ hr{
 .caja7 ul{
 	padding: 0;
 	display: flex;
-	animation: cambio2 20s infinite;
-	-webkit-animation: cambio2 20s infinite;
+	animation: cambio2 10s infinite;
+	-webkit-animation: cambio2 10s infinite;
 }
 .caja7 li{
 	width: 100%;
@@ -640,8 +640,8 @@ hr{
 .caja6 ul{
 	padding: 0;
 	display: flex;
-	animation: cambio3 20s infinite;
-	-webkit-animation: cambio3 20s infinite;
+	animation: cambio3 18s infinite;
+	-webkit-animation: cambio3 18s infinite;
 }
 .caja6 li{
 	width: 100%;
@@ -842,12 +842,13 @@ hr{
 }
 
 
+
 .nav-responsive .menu:before{
   position: absolute;
   content: '';
   height: 20px;
   width: 20px;
-  background: #1b1b1b;
+  background: #f0f0f0;
   right: 20px;
   top: -10px;
   transform: rotate(45deg);
@@ -993,6 +994,7 @@ input{
 	.text-balanceado-responsive{
 	display: flex;
 	font-weight: 200;
+	color: #090909;
 }
 	.text-balanceado{
 		display: none;
@@ -1001,21 +1003,26 @@ input{
 		height: 500px;
 	}
 
+	.container-darkmode {
+		justify-content: start !important;
+		left: 30px ;
+	}
+
 	.darkmode .slider {
-  background-color: #4e82ad !important;
+  background-color: #457093 !important;
 }
 
 
 	body.darkmode {
-		color: #4e82ad !important;
+		color: #457093 !important;
 	}
 
 .darkmode .slider::after {
-  background-color: #4e82ad !important;
+  background-color: #457093 !important;
 }
 
 input:checked + .slider {
-  background-color: #4e82ad;
+  background-color: #457093 !important;
 }
 }
 
@@ -1186,8 +1193,17 @@ body.darkmode{
   color: #2a5bd7;
 }
 
-.darkmode .slider::after {background-color: rgb(255, 255, 255);}
+.darkmode .slider::after {background-color: rgb(232, 232, 232);}
 
 .darkmode .slider {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(232, 232, 232);
+}
+
+.darkmode .nav-responsive .menu:before{
+  background: #090909;
+  }
+
+
+ .darkmode .text-balanceado-responsive{
+	color: white;
 }

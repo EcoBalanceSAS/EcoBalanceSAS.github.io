@@ -138,6 +138,13 @@
     </nav>
    </header>   
 
+   <!-- BOTON BACK -->
+<div class="btn-back-container">
+    <a href="index.html" class="btn-back"> 
+        <img src="esquema-de-boton-circular-de-flecha-hacia-atras-izquierda.png" height="40px" width="40px" alt="volver">
+    </a>
+</div>
+
    <!-- BOTON WHATSAPP -->
 <a href="https://api.whatsapp.com/send?phone=5493535646362" class="btn-wsp" target="_blank">
     <i class="fa fa-whatsapp"></i>
@@ -224,6 +231,34 @@
             <span class="copyright"> &copy;2022, EcoBalance S.A.S. Todos los derechos reservados.</span>
         </footer>
 </div>
+
+
+<script>
+        const bdark = document.querySelector('#bdark');
+        const body = document.querySelector('body');
+
+        load();
+
+        bdark.addEventListener('click', e =>{
+            body.classList.toggle('darkmode');
+            store(body.classList.contains('darkmode'));
+        });
+
+        function load(){
+            const darkmode = localStorage.getItem('darkmode');
+
+            if(!darkmode){
+                store('false');
+            }else if(darkmode == 'true'){
+                body.classList.add('darkmode')
+            }
+        }
+
+        function store(value){
+            localStorage.setItem('darkmode', value)
+        }
+    </script>
+
 
 </body>
 </html>
