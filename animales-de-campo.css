@@ -403,6 +403,9 @@ input{
 	-moz-text-shadow: 1px 0 2px rgba(0, 0, 0, 0.2) ; 
 }
 
+.subtitle-responsive{
+	display: none;
+}
 
 hr{
 	color: rgba(190, 189, 189, 0.363);
@@ -453,6 +456,13 @@ hr{
 	.text-balanceado{
 		display: none;
 	}
+	.subtitle-responsive{
+	display: flex;
+	justify-content: end;
+	position: relative;
+	font-weight: 900;
+	right: 30px;
+}
 }
 
 
@@ -651,3 +661,116 @@ body.darkmode{
 	  .darkmode .btn-back {
 	  background-color: #333;}
   }
+
+
+  /* PERROS */
+  .resize{
+	display: flex;
+	position: relative;
+	width: 80%;
+	height: 80%;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #f0f0f0;
+	left: 10%;
+	gap: 10px;
+	margin-bottom: 10px;
+  }
+
+  .resize img{
+	height: auto;
+	width: auto;
+	max-height: 400px;
+	max-width: 400px;
+  }
+
+  .continer-resize{
+	display: flex;
+	width: 100% !important;
+	height: 100% !important;
+	margin: auto;
+	justify-content:center;
+	background-color: white !important;
+  }
+
+  .consulta{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #202020;
+	margin: 0 auto;
+	width: 150px;
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color:white ;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.consulta:hover{
+	background-color: #080808;
+}
+.darkmode  .resize{
+	display: flex;
+	position: relative;
+	width: 80%;
+	height: 80%;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #333;
+	left: 10%;
+	gap: 10px;
+	margin-bottom: 10px;
+  }
+
+.darkmode  .resize img{
+	height: auto;
+	width: auto;
+	max-height: 400px;
+	max-width: 400px;
+  }
+
+.darkmode  .conainter-resize{
+	display: flex;
+	width: 100% !important;
+	height: 100% !important;
+	margin: auto;
+	justify-content:center;
+	background-color: white !important;
+  }
+
+.darkmode  .consulta{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #202020;
+	margin: 0 auto;
+	width: 150px;
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	font-weight: bold;
+	color:rgb(221, 221, 221) ;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+.darkmode .consulta:hover{
+	background-color: #1b1b1b;
+}
+.subtitle{
+	display: flex;
+	justify-content: end;
+	position: relative;
+	font-weight: 900;
+	right: 30px;
+}
+
