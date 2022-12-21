@@ -93,7 +93,7 @@ html{
 .navbar-links a{
 	color: #000000;
 	/**!BAJARMRPARARESPONSIVE*/
-	margin-right: 100px;
+	margin-right: 78px;
 	display: block;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
@@ -102,10 +102,8 @@ html{
 	padding-top: 10px;
 }
 
-.accesorios{
+/* .accesorio
 	/**!BAJARMRPARARESPONSIVE*/
-	padding-right: 80px;
-}
 
 
 .nav-responsive{
@@ -143,7 +141,7 @@ html{
 
 .navbar-links li ul li{
   position: relative;
-  margin-right: -87px;
+  margin-right: -77px;
   padding: 4px;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -909,9 +907,6 @@ input{
 	.navbar-links li{
 		margin-right: -15px;
 	}
-	.accesorios {
-  padding-right: 50px;
-}
 
 .actionTxtType9 .paragraph_txt em {
 	font-size: 30px;
@@ -922,11 +917,8 @@ input{
 }
 
 @media (max-width:1126px){
-	.accesorios{
-		padding-right: 20px;
-	}
 	.navbar-links a{
-		margin-right: 67px;
+		margin-right: 50px;
 	}
 	.actionTxtType9 .paragraph_txt em {
   font-size: 25px;
@@ -934,7 +926,7 @@ input{
 	.actionTxtType9 .paragraph_txt em {margin-bottom: 13px;line-height: 35px;}
 
 	.navbar-links li:hover > ul{min-width: 195px;}
-	.navbar-links li ul li {margin-right: -176px;}
+	.navbar-links li ul li {margin-right: -172px;}
 
 	.campo {
   width: 90%;
