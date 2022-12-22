@@ -408,6 +408,10 @@ input{
   top: 0px;
 }
 
+.flex-container-balanceado-box .img-edit {height: 167px;
+  top: -19px;
+}
+
 .caja{
 	height: 280px;
 	width: 350px;
