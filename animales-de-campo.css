@@ -907,3 +907,6 @@ body.darkmode{
 	right: 30px;
 }
 
+#nocursor{
+	cursor: auto;
+}
